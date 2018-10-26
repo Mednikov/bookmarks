@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    {% if page.title_tab %}
+      {{page.title_tab}}
+    {% elsif page.title %}
+      {{page.title}}
+    {% elsif post.title_tab %}
+      {{post.title_tab}}
+    {% elsif post.title %}
+      {{post.title}}
+    {% else %}
+      {{site.title}}
+    {% endif %}
+  </title>
+
+  <meta charset="UTF-8">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">
+
+  <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <style>
+    a{color:#49089a; border-bottom: 1px solid #49089a;}
+    a:hover, a:focus{color:#9f84d4; text-decoration:none; border-color:#9f84d4;}
+    h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,.navbar-brand{font-family:'Montserrat',sans-serif; margin-bottom:1rem;}
+    .navbar-brand{font-weight:bold;}
+    h1[id],.h1[id],h2[id],.h2[id],h3[id],.h3[id],h4[id],.h4[id],h5[id],.h5[id],h6[id],.h6[id]{position:relative;}
+    .section-anchor-link{position:absolute; left:-1em; padding-right:.3em; border-bottom:0; opacity:0;}
+    h2:hover .section-anchor-link, h2:focus .section-anchor-link, h2:active .section-anchor-link{opacity: .5;}
+    h2:hover .section-anchor-link:hover, h2:hover .section-anchor-link:focus, h2:hover .section-anchor-link:active, h2:focus .section-anchor-link:hover, h2:focus .section-anchor-link:focus, h2:focus .section-anchor-link:active, h2:active .section-anchor-link:hover, h2:active .section-anchor-link:focus, h2:active .section-anchor-link:active {opacity:1; color:#49089a}
+    /*.section p{position:relative;}*/
+    img[alt=favicon] {/*position:absolute; top:.4em; left:-1.5em;*/ width:1em; height:1em; margin-right:.25rem;}
+  </style>
+
+</head>
+<body class="bg-light">
+
+  <!--HEADER-->
+  {% include header.html %}
+  <!--END HEADER-->
+  <!--CONTENT-->
+  
+  <section class="content bg-white">
+    {{content}}
+  </section>
+
+  <!--END CONTENT-->
+  <!--FOOTER-->
+  {% include footer.html %}
+  <!--END FOOTER-->
+
+</body>
+</html>
