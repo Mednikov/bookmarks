@@ -16,3 +16,6 @@ anchor: colors
 
 <img src="https://www.webpagefx.com/web-design/random-color-picker/static/images/favicon.png" alt="favicon"/>
 [HEX to RGB Converter](https://www.webpagefx.com/web-design/hex-to-rgb/){:target="_blank"}    
+
+<https://coolors.co/assets/images/favicon.png" alt="favicon"/>
+[Coolors.co](https://coolors.co/){:target="_blank"}    
