@@ -16,3 +16,6 @@ anchor: fonts
 
 <img src="https://fontawesome.com/images/favicons/favicon-16x16.png" alt="favicon"/>
 [Font Awesome](https://fontawesome.com/){:target="_blank"}    
+
+[Type Scale - A Visual Calculator](http://type-scale.com/){:target="_blank"}
+Preview and choose the right type scale for your project. Experiment with font size, scale and different webfonts.    
